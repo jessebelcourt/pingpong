@@ -1,0 +1,19 @@
+{
+    "eslint.enable": true,
+    "eslint.experimental.useFlatConfig": true,
+    "eslint.format.enable": true,
+    "eslint.options": {
+        "overrideConfigFile": "./eslint.config.js"
+    },
+    "eslint.validate": [
+        "javascript",
+        "typescript",
+      ],
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "[typescript]": {
+        "editor.tabSize": 2,
+    },
+    "typescript.tsdk": "node_modules/typescript/lib"
+}

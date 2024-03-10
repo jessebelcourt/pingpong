@@ -1,0 +1,22 @@
+{
+  "name": "npm-package-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc -w",
+    "lint": "npx eslint ."
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/eslint__js": "^8.42.3",
+    "eslint": "^8.57.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3",
+    "typescript-eslint": "^7.1.1"
+  }
+}
