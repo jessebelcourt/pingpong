@@ -1,3 +1,3 @@
 import OpenAI from 'openai';
 
-export type InitiateArgs = OpenAI.Chat.Completions.ChatCompletionCreateParamsNonStreaming;
+export type InitiateArgs = OpenAI.Chat.Completions.ChatCompletionMessageParam[];

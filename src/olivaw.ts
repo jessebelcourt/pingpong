@@ -5,8 +5,9 @@ import { InitiateArgs } from './types/initiate-args.type';
 
 export class Olivaw {
   public client: OpenAI;
+  private static model = "gpt-4-turbo-preview";
   
-  constructor(apiToken: string) {
+  constructor(apiToken?: string) {
     this.client = new OpenAI({
       apiKey: !apiToken 
         ? process.env['PP_CGPT_API_KEY'] 
@@ -19,7 +20,10 @@ export class Olivaw {
       .client
       .chat
       .completions
-      .create(messages);
+      .create({
+        messages,
+        model: Olivaw.model
+      });
 
     console.log(completion.choices[0]);
   }
